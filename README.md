@@ -1,11 +1,8 @@
-# Automação de Testes com Cypress
+# Automação de Testes E2E com Cypress
 
-Este projeto demonstra a automação de testes End-to-End (E2E) utilizando o Cypress.
+Este projeto demonstra a automação de testes End-to-End (E2E) utilizando Cypress.
 
-## Cenários automatizados
-
-- Login com sucesso
-- Login inválido
+O objetivo é validar o fluxo de login de uma aplicação web utilizando boas práticas de automação, incluindo a organização com Page Object Model (POM).
 
 ## Tecnologias utilizadas
 
@@ -13,31 +10,51 @@ Este projeto demonstra a automação de testes End-to-End (E2E) utilizando o Cyp
 - JavaScript
 - Node.js
 
+## Estrutura do projeto
+cypress
+├── e2e
+│ └── login.cy.js
+│
+├── pages
+│ └── loginPage.js
+│
+├── fixtures
+└── support
+
+
+## Cenários automatizados
+
+- Login com sucesso
+- Login inválido
+- Login com usuário bloqueado
+
 ## Como executar o projeto
 
-1. Clonar o repositório
+### 1. Clonar o repositório
 
 
 git clone https://github.com/stephanycarolinem/qa-automation-cypress.git
 
 
-2. Instalar dependências
-
+### 2. Instalar dependências
 
 npm install
 
+### 3. Executar o Cypress
 
-3. Executar o Cypress
-
+Modo interativo:
 
 npx cypress open
 
+Modo headless:
 
-## Objetivo do projeto
+npx cypress run
 
-Este projeto foi desenvolvido como prática de automação de testes para demonstrar conhecimentos em Quality Assurance (QA).
-E automação utilizando Cypress.
 
-## Objetivo do projeto
+## Objetivo
 
-Este projeto foi desenvolvido como prática de automação de testes para demonstrar conhecimentos em Quality Assurance (QA) e automação utilizando Cypress.
+Este projeto foi desenvolvido como prática de automação de testes para demonstrar conhecimentos em Quality Assurance (QA), automação de testes e organização de testes utilizando Page Object Model.
+
+
+
+npx cypress run

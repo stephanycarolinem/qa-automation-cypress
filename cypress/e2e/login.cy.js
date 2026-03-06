@@ -25,3 +25,14 @@ describe('Login', () => {
   })
 
 })
+
+it('Login com usuário bloqueado', () => {
+
+  loginPage.visit()
+  loginPage.fillUsername('locked_out_user')
+  loginPage.fillPassword('secret_sauce')
+  loginPage.submit()
+
+  cy.get('[data-test="error"]').should('be.visible')
+
+})

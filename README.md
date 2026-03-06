@@ -12,6 +12,7 @@ O objetivo é praticar automação de testes e aplicar boas práticas utilizadas
 
 ## Estrutura do projeto
 
+```
 cypress
 ├── e2e
 │   └── login.cy.js
@@ -19,6 +20,7 @@ cypress
 │   └── loginPage.js
 ├── fixtures
 └── support
+```
 
 ## Cenários automatizados
 
